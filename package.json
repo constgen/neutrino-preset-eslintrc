@@ -1,0 +1,47 @@
+{
+  "name": "neutrino-preset-eslintrc",
+  "version": "0.1.0",
+  "description": "Neutrino preset that consumes ESLint RC files",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constgen/neutrino-preset-eslintrc.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintrc",
+		"neutrino",
+		"preset",
+		"neutrino-preset",
+		"webpack"
+	],
+  "author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/constgen/neutrino-preset-eslintrc/issues"
+  },
+  "homepage": "https://github.com/constgen/neutrino-preset-eslintrc#readme",
+  "scripts": {
+		"test": "npm run lint",
+		"lint": "eslint --ext .js src/"
+	}, 
+  "dependencies": {
+    "@neutrinojs/eslint": "~8.1.1"
+  },
+  "devDependencies": {
+		"eslint": "^4.18.1"
+	},
+	"peerDependencies": {
+		"neutrino": "^8.0.0"
+	},
+	"files": [
+		"src/*",
+		"README.md",
+		"LICENSE",
+		"package.json"
+	],
+	"engines": {
+		"node": ">=6.9.0",
+		"npm": ">=3.0.0"
+	}
+}
